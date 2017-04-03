@@ -53,6 +53,16 @@ module.exports = function (grunt) {
       dist: ['.tmp', '<%= basement.dist %>/*'],
       server: '.tmp'
     },
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: '<%= basement.app %>/images',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: '.tmp/images',                  // Destination path prefix
+        }]
+      }
+    },
     coffee: {
       server: {
         files: [{
@@ -193,7 +203,7 @@ module.exports = function (grunt) {
     'pug:dist',
     'copy',
   ]);
-  
+
   grunt.registerTask('deploy', [
     'build',
     'gh-pages',
