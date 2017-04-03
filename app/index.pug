@@ -1,0 +1,18 @@
+doctype html
+html(lange="en")
+
+	head
+		include meta
+		link( rel="stylesheet", media="screen", href="styles/styles.css")
+
+	body.home
+		#App
+			include views/header
+			.content
+				include views/posts
+				//- include views/products
+
+			include views/footer
+
+
+	include scripts

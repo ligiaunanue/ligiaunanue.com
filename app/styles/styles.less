@@ -1,0 +1,137 @@
+@import "global-styles.less";
+@import "fonts.less";
+
+html, body{ width:100%; height:100%; .merriweather; }
+
+@estyColor: #F57209;
+@instagramColor: #D92187;
+@active:#0084FF;
+@imgBorderRadius:4px;
+@textColor:#2E323C;
+@buttonColor:@estyColor;
+
+.container{ max-width:960px;  }
+.light{ font-weight:200; }
+.bold{ font-weight:600; }
+.black{ font-weight:800; }
+.italic{ font-style:italic; }
+
+#App {margin:0 auto; .flxCol; .asc; color:@textColor; }
+
+
+.t1{ .fs(28px); .black; }
+.t2{ .fs(22px, 1.4); }
+.p{ .fs(22px, 36px); .roboto; font-weight:300; color:@textColor;
+	b{ .roboto; font-weight:500; color:black; }
+}
+
+
+// Structure ------------
+header{ width: 100%; .container; .asc; }
+	.nav{ width:100%; margin:28px 0; .jcsb; .aic; .flxRow; .flxWrap;
+		.logo{ .t1; .anchor; padding:20px; .anim(80ms); }
+		.expander{ display:none; .fs(24px); padding:20px; .anchor; .unselectable; .roboto;
+			&:hover{ color:@active;}
+		}
+		.items{ .flxRow;
+			&.open{ }
+		}
+			.item{ .fs(27px); padding:20px; .anchor; .light; .anim(80ms); }
+		.logo:hover, .item:hover{ color:@active; .anim(80ms) }
+	}
+
+footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
+	.social{ .flxRow; .jcc; .aic; margin: 0 0 40px 0; padding:20px; .anchor;
+		&:hover{ background-color: darken(white, 5%); .br(4px); }
+		&.instagram{ color:@instagramColor; margin-right:20px;
+			.icon{ background-image:url('/images/instagram.png'); }
+		}
+		&.etsy{ color:@estyColor;
+			.icon{ width:128px; background-image:url('/images/etsy.png'); }
+		}
+		.icon{ width:64px; height:64px; margin-right:16px; .contain; background-repeat:no-repeat; background-position:center center;}
+		span{ .t2; }
+	}
+}
+
+
+.products-title{ margin-top:36px; .t1; color:#B3B6BF; .tac; }
+
+// Components
+
+.button{ padding:14px 8px 12px; .tac; .jcc; .fs(20px); font-family: sans-serif; color:white; font-weight:bold; background:@buttonColor; .br(30px); }
+
+
+.content{ .flxCol; .aic; }
+// Posts List
+.posts{ max-width:960px; .flxRow; .flxWrap; }
+	.post-item{ width:300px; .tac; margin:0 20px 20px 0; .anchor;
+		.img{ height:200px; .flxCol; .jcc; }
+      .img-inner{ .asc; }
+		.title{ .t2; .bold; margin-bottom:4px; }
+		.subtitle{ .t2; .light; .italic; }
+
+		&:hover{
+			.img-inner{ .anim(100ms); .trans(scale(1.0));  }
+			.title{ color:@active; }
+		}
+	}
+
+
+// Products List
+.products{ .flxRow; .flxWrap; }
+	.product{ width:300px; .flxCol; .tac; margin:0 20px 20px 0; .anchor;
+		.img{ height:360px; }
+		.title{ .t2; .bold; margin-bottom:4px; }
+		.button{ width:200px; .button; .asc; }
+
+		&:hover{
+			.img-inner{ .anim(100ms); .trans(scale(1.0)); }
+			.button{ background:@active; }
+		}
+	}
+
+//Post Page
+.post{ .flxCol; .aic;
+	.main-image{ width:100%; max-height:320px; .jcc; .aic; .overflow;  margin-bottom:24px;
+		.img{ }
+	}
+
+	.title{ .t1; .tac; margin-bottom:12px;}
+	.subtitle{ .t1; .light; .italic; .tac; margin-bottom: 24px; }
+	p{ width:100%; max-width:600px; padding:0 20px; .p; .tal; .flxCol; }
+  .images{ width:100%; max-width:1200px; .flxRow; .flxWrap; .jcc; .aic; }
+		.image{ max-width:600px; margin:8px; .br(@imgBorderRadius); .overflow;
+			.image-inner{ width:100%; height:auto; .block; }
+		}
+
+  .video{
+		iframe{ width:500px; height:320px;
+		}
+	}
+}
+
+.img{ margin-bottom:8px; .overflow; .br(@imgBorderRadius); }
+	.img-inner{ width:100%; height:auto; .br(@imgBorderRadius); .trans(scale(1.05)); .anim(240ms); .block; }
+
+
+
+
+// Media queries
+@media only screen
+and (max-width : 800px) {
+	.nav .expander{ display:block; }
+	.nav .items{ display:none; }
+}
+
+
+// Media queries
+@media only screen
+and (max-width : 400px) {
+	footer{
+		.social{
+			.icon{ width:50px !important; height:50px; }
+			span{ .fs(16px); }
+		}
+	}
+}
