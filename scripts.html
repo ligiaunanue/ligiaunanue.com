@@ -1,0 +1,9 @@
+<div id="Scripts"><script src="scripts/lib/jquery.min.js"></script><script>$(document).ready(function(){
+
+	$('.expander').click(function(){
+		$('.items').toggle()
+		var text = $('.expander').text()
+		$('.expander').text( text == '☰' ? '✕' : '☰' )
+	})
+
+})</script></div>
