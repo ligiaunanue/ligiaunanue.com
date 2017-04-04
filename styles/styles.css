@@ -1017,6 +1017,9 @@ footer .social span {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -1211,6 +1214,18 @@ footer .social span {
   background: #F57209;
 }
 .post {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+.post section {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
