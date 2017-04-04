@@ -5,7 +5,7 @@ html, body{ width:100%; height:100%; .merriweather; }
 
 @estyColor: #F57209;
 @instagramColor: #D92187;
-@active:#0084FF;
+@active:@estyColor;
 @imgBorderRadius:4px;
 @textColor:#2E323C;
 @buttonColor:@estyColor;
@@ -36,7 +36,7 @@ header{ width: 100%; .container; .asc; }
 		.items{ .flxRow;
 			&.open{ }
 		}
-			.item{ .fs(27px); padding:20px; .anchor; .light; .anim(80ms); }
+			.item{ .fs(27px); padding:20px; .anchor; .light; .anim(80ms); color:@textColor; }
 		.logo:hover, .item:hover{ color:@active; .anim(80ms) }
 	}
 
@@ -68,8 +68,8 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 	.post-item{ width:300px; .tac; margin:0 20px 20px 0; .anchor;
 		.img{ height:200px; .flxCol; .jcc; }
       .img-inner{ .asc; }
-		.title{ .t2; .bold; margin-bottom:4px; }
-		.subtitle{ .t2; .light; .italic; }
+		.title{ .t2; .bold; margin-bottom:4px; color:@textColor;}
+		.subtitle{ .t2; .light; .italic; color:@textColor; }
 
 		&:hover{
 			.img-inner{ .anim(100ms); .trans(scale(1.0));  }
@@ -82,8 +82,8 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 .products{ .flxRow; .flxWrap; }
 	.product{ width:300px; .flxCol; .tac; margin:0 20px 20px 0; .anchor;
 		.img{ height:360px; }
-		.title{ .t2; .bold; margin-bottom:4px; }
-		.button{ width:200px; .button; .asc; }
+		.title{ .t2; .bold; margin-bottom:4px; color:@textColor; }
+		.button{ width:200px; .button; .asc; color:@textColor; }
 
 		&:hover{
 			.img-inner{ .anim(100ms); .trans(scale(1.0)); }
@@ -100,8 +100,8 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 	.title{ .t1; .tac; margin-bottom:12px;}
 	.subtitle{ .t1; .light; .italic; .tac; margin-bottom: 24px; }
 	p{ width:100%; max-width:600px; padding:0 20px; .p; .tal; .flxCol; }
-  .images{ width:100%; max-width:1200px; .flxRow; .flxWrap; .jcc; .aic; }
-		.image{ max-width:600px; margin:8px; .br(@imgBorderRadius); .overflow;
+  .images{ width:100%; .flxRow; .flxWrap; .jcc; .aic; }
+		.image{ max-width:400px; margin:8px; .br(@imgBorderRadius); .overflow;
 			.image-inner{ width:100%; height:auto; .block; }
 		}
 
