@@ -659,12 +659,6 @@ a {
 .sfui {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Merriweather';
-}
 .container {
   max-width: 960px;
 }
@@ -680,7 +674,11 @@ body {
 .italic {
   font-style: italic;
 }
-#App {
+.default-text-styles {
+  font-family: 'Merriweather';
+  color: #2E323C;
+}
+body {
   margin: 0 auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -692,6 +690,7 @@ body {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
+  font-family: 'Merriweather';
   color: #2E323C;
 }
 .t1 {
@@ -719,7 +718,7 @@ body {
   font-weight: 500;
   color: black;
 }
-header {
+.nav {
   width: 100%;
   max-width: 960px;
   -webkit-align-self: center;
@@ -730,7 +729,7 @@ header {
   display: -ms-flex;
   display: flex;
 }
-.nav {
+.nav .inner {
   width: 100%;
   margin: 28px 0;
   -webkit-justify-content: space-between;
@@ -750,13 +749,13 @@ header {
   display: -ms-flex;
   display: flex;
 }
-.nav .nav-text {
+.nav .inner .nav-text {
   font-size: 26px;
   line-height: 1;
   letter-spacing: 0;
   color: #2E323C;
 }
-.nav .logo {
+.nav .inner .logo {
   padding: 20px;
   font-size: 26px;
   line-height: 1;
@@ -781,7 +780,7 @@ header {
   transition-duration: 80ms;
   transition-timing-function: linear;
 }
-.nav .logo:hover {
+.nav .inner .logo:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -webkit-transition-duration: 130ms;
@@ -796,7 +795,7 @@ header {
   transition-duration: 130ms;
   transition-timing-function: linear;
 }
-.nav .expander {
+.nav .inner .expander {
   display: none;
   font-size: 24px;
   line-height: 1;
@@ -810,10 +809,10 @@ header {
   user-select: none;
   font-family: 'roboto';
 }
-.nav .expander:hover {
+.nav .inner .expander:hover {
   color: #F57209;
 }
-.nav .items {
+.nav .inner .items {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -822,7 +821,7 @@ header {
   display: -ms-flex;
   display: flex;
 }
-.nav .item {
+.nav .inner .item {
   padding: 20px;
   cursor: pointer;
   font-size: 26px;
@@ -846,7 +845,7 @@ header {
   transition-duration: 80ms;
   transition-timing-function: linear;
 }
-.nav .item:hover {
+.nav .inner .item:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -webkit-transition-duration: 130ms;
@@ -861,8 +860,8 @@ header {
   transition-duration: 130ms;
   transition-timing-function: linear;
 }
-.nav .logo:hover,
-.nav .item:hover {
+.nav .inner .logo:hover,
+.nav .inner .item:hover {
   color: #F57209;
   -webkit-transition-property: all;
   -webkit-transition-duration: 80ms;
@@ -880,8 +879,8 @@ header {
   transition-duration: 80ms;
   transition-timing-function: linear;
 }
-.nav .logo:hover:hover,
-.nav .item:hover:hover {
+.nav .inner .logo:hover:hover,
+.nav .inner .item:hover:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -webkit-transition-duration: 130ms;
@@ -1023,13 +1022,13 @@ footer .social span {
   display: -ms-flex;
   display: flex;
 }
-.post-item {
+.posts .item {
   width: 300px;
   text-align: center;
   margin: 0 20px 30px 0;
   cursor: pointer;
 }
-.post-item .img {
+.posts .item .img {
   height: 200px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1042,7 +1041,7 @@ footer .social span {
   display: -ms-flex;
   display: flex;
 }
-.post-item .img-inner {
+.posts .item .img-inner {
   -webkit-align-self: center;
   -ms-align-self: center;
   align-self: center;
@@ -1051,7 +1050,7 @@ footer .social span {
   display: -ms-flex;
   display: flex;
 }
-.post-item .title {
+.posts .item .title {
   font-size: 22px;
   line-height: 1.4;
   letter-spacing: 0;
@@ -1060,7 +1059,7 @@ footer .social span {
   margin-bottom: 4px;
   color: #2E323C;
 }
-.post-item .subtitle {
+.posts .item .subtitle {
   font-size: 22px;
   line-height: 1.4;
   letter-spacing: 0;
@@ -1068,7 +1067,7 @@ footer .social span {
   font-style: italic;
   color: #2E323C;
 }
-.post-item:hover .img-inner {
+.posts .item:hover .img-inner {
   -webkit-transition-property: all;
   -webkit-transition-duration: 100ms;
   -webkit-transition-timing-function: linear;
@@ -1090,7 +1089,7 @@ footer .social span {
   -o-transform: scale(1);
   transform: scale(1);
 }
-.post-item:hover .img-inner:hover {
+.posts .item:hover .img-inner:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -webkit-transition-duration: 150ms;
@@ -1105,7 +1104,7 @@ footer .social span {
   transition-duration: 150ms;
   transition-timing-function: linear;
 }
-.post-item:hover .title {
+.posts .item:hover .title {
   color: #F57209;
 }
 .products {

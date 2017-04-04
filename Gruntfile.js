@@ -88,11 +88,10 @@ module.exports = function (grunt) {
     pug: {
       server: {
         files: [{
-          // rather than compiling multiple files here you should
-          // require them into your main .coffee file
           expand: true,
+          flatten: true,
           cwd: '<%= basement.app %>',
-          src: '*.pug',
+          src: ['*.pug', 'pages/*.pug'],
           dest: '.tmp',
           ext: '.html'
         }],
@@ -106,8 +105,9 @@ module.exports = function (grunt) {
           // rather than compiling multiple files here you should
           // require them into your main .coffee file
           expand: true,
+          flatten: true,
           cwd: '<%= basement.app %>',
-          src: '*.pug',
+          src: ['*.pug', 'pages/*.pug'],
           dest: '<%= basement.dist %>',
           ext: '.html'
         }],

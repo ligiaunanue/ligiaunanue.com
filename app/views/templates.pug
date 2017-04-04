@@ -3,22 +3,19 @@
 - var rootYoutube = 'https://www.youtube.com/embed/'
 
 mixin post-item(title, subtitle, href, imageUrl)
-	a.post-item( href=href+'.html' title=title )
+	a.item( href=href+'.html' title=title )
 		.img
 			image.img-inner(src=root+'/'+imageUrl+'.jpg')
 
-		.title
-			span= title
-		.subtitle
-			span= subtitle
+		.title= title
+		.subtitle= subtitle
 
 mixin product(title, imageUrl)
 	.product
 		.img
 			image.img-inner(src=root+'/'+imageUrl+'.jpg')
 
-		.title
-			span= title
+		.title= title
 		.button COMPRAR
 
 
