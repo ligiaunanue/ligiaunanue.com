@@ -57,9 +57,9 @@ module.exports = function (grunt) {
       dynamic: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
-          cwd: '<%= basement.app %>/images',                   // Src matches are relative to this path
+          cwd: 'app/',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: '.tmp/images',                  // Destination path prefix
+          dest: 'dist/'                  // Destination path prefix
         }]
       }
     },
@@ -149,10 +149,10 @@ module.exports = function (grunt) {
     imagemin: {                          // Task
       dynamic: {                         // Another target
         files: [{
-          expand: true,                  // Enable dynamic expansion
-          cwd: 'dist/',                   // Src matches are relative to this path
-          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'dist/'                  // Destination path prefix
+          expand: true,
+          cwd: '<%= basement.app %>',
+          src: '**/*.{png,jpg,gif}',
+          dest: 'dist',
         }]
       }
     },
@@ -202,6 +202,7 @@ module.exports = function (grunt) {
     'less:dist',
     'pug:dist',
     'copy',
+    'imagemin',
   ]);
 
   grunt.registerTask('deploy', [
