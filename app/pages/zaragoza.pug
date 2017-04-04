@@ -1,45 +1,46 @@
-extends ../views/layout.pug
+extends ../views/layout-post
 
 
-block content
+block post-header
 	include ../views/templates
-	.post
-		+main-image('zaragoza/zaragoza_21')
+	+main-image('zaragoza/zaragoza_21')
 
-		.title Enimgáticos Caminos Geométricos
-		.subtitle Facultad de Educación, Universidad de Zaragoza
-		.subtitle 30 de Enero al 28 de Febrero 2017
+	h1.title Enimgáticos Caminos Geométricos
+	.subtitle Facultad de Educación, Universidad de Zaragoza
+	.subtitle 30 de Enero al 28 de Febrero 2017
 
-		p La exposición se compone de dos líneas de trabajo con un hilo conductor.
-		p Este hilo conductor es el octógono que evoluciona del cuadrado en todas direcciones hacia la tridimensionalidad.La primera es la investigación que Ligia lleva haciendo los últimos años con los 5 sólidos platónicos en algunas de sus variantes (truncados, elevados o estrellados, expandidos y helicoidales).
-		p Estos poliedros están realizados con piezas de vidrio de diferentes tamaños, colores y texturas.
-		p Ocho poliedros que están suspendidos dentro de cubos de acero, forman una estrella octogonal característica de la geometría de Al-Andalus (y de todo le arte geométrico del Islam). Y esta a la vez está suspendida en el centro de toda la instalación.
-		p La  segunda línea de trabajo es el resultado del estudio de uno de los más famosos paneles de alicatado de la Alhambra y los patrones y proporciones geométricos que encierra. Estudiando también el conjunto de estrellas entrelazadas (Lacerías) y los colores que las hacen resaltar produciendo efectos de tridimensionalidad en el plano.
-		p Ligia presentó estas estrellas en volumen como si se tratara de cúpulas o esferas.
-		p Es un trabajo que continuará desarrollando sin perspectivas de límites de tiempo.
+block post-content
+	include ../views/templates
+	p La exposición se compone de dos líneas de trabajo con un hilo conductor.
+	p Este hilo conductor es el octógono que evoluciona del cuadrado en todas direcciones hacia la tridimensionalidad.La primera es la investigación que Ligia lleva haciendo los últimos años con los 5 sólidos platónicos en algunas de sus variantes (truncados, elevados o estrellados, expandidos y helicoidales).
+	p Estos poliedros están realizados con piezas de vidrio de diferentes tamaños, colores y texturas.
+	p Ocho poliedros que están suspendidos dentro de cubos de acero, forman una estrella octogonal característica de la geometría de Al-Andalus (y de todo le arte geométrico del Islam). Y esta a la vez está suspendida en el centro de toda la instalación.
+	p La  segunda línea de trabajo es el resultado del estudio de uno de los más famosos paneles de alicatado de la Alhambra y los patrones y proporciones geométricos que encierra. Estudiando también el conjunto de estrellas entrelazadas (Lacerías) y los colores que las hacen resaltar produciendo efectos de tridimensionalidad en el plano.
+	p Ligia presentó estas estrellas en volumen como si se tratara de cúpulas o esferas.
+	p Es un trabajo que continuará desarrollando sin perspectivas de límites de tiempo.
 
-		+youtube('E4ngjhXyjvU')
+	+youtube('E4ngjhXyjvU')
 
-		.images
-			+image('zaragoza/zaragoza_00')
-			+image('zaragoza/zaragoza_01')
-			+image('zaragoza/zaragoza_02')
-			+image('zaragoza/zaragoza_03')
-			+image('zaragoza/zaragoza_04')
-			+image('zaragoza/zaragoza_05')
-			+image('zaragoza/zaragoza_06')
-			+image('zaragoza/zaragoza_07')
-			+image('zaragoza/zaragoza_08')
-			+image('zaragoza/zaragoza_09')
-			+image('zaragoza/zaragoza_10')
-			+image('zaragoza/zaragoza_11')
-			+image('zaragoza/zaragoza_12')
-			+image('zaragoza/zaragoza_13')
-			+image('zaragoza/zaragoza_14')
-			+image('zaragoza/zaragoza_15')
-			+image('zaragoza/zaragoza_16')
-			+image('zaragoza/zaragoza_17')
-			+image('zaragoza/zaragoza_18')
-			+image('zaragoza/zaragoza_19')
-			+image('zaragoza/zaragoza_20')
-			+image('zaragoza/zaragoza_21')
+	.images
+		+image('zaragoza/zaragoza_00')
+		+image('zaragoza/zaragoza_01')
+		+image('zaragoza/zaragoza_02')
+		+image('zaragoza/zaragoza_03')
+		+image('zaragoza/zaragoza_04')
+		+image('zaragoza/zaragoza_05')
+		+image('zaragoza/zaragoza_06')
+		+image('zaragoza/zaragoza_07')
+		+image('zaragoza/zaragoza_08')
+		+image('zaragoza/zaragoza_09')
+		+image('zaragoza/zaragoza_10')
+		+image('zaragoza/zaragoza_11')
+		+image('zaragoza/zaragoza_12')
+		+image('zaragoza/zaragoza_13')
+		+image('zaragoza/zaragoza_14')
+		+image('zaragoza/zaragoza_15')
+		+image('zaragoza/zaragoza_16')
+		+image('zaragoza/zaragoza_17')
+		+image('zaragoza/zaragoza_18')
+		+image('zaragoza/zaragoza_19')
+		+image('zaragoza/zaragoza_20')
+		+image('zaragoza/zaragoza_21')

@@ -1,0 +1,18 @@
+doctype html
+html(lange="en")
+	include head
+
+	body.home
+		include header
+
+		article.post
+			header
+				block post-header
+
+			section.contents
+				block post-content
+
+		include footer
+
+
+	include scripts
