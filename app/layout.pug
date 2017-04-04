@@ -13,6 +13,18 @@ html(lange="en")
 			ga('create', 'UA-96759071-1', 'auto');
 			ga('send', 'pageview');
 
+		script( type="application/ld+json").
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Organization",
+			  "url": "http://www.your-company-site.com",
+			  "contactPoint": [{
+			    "@type": "ContactPoint",
+			    "telephone": "+1-401-555-1212",
+			    "contactType": "customer service"
+			  }]
+			}
+
 	body.home
 		#App
 			include views/header
