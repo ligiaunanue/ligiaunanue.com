@@ -695,7 +695,7 @@ body {
   color: #2E323C;
 }
 .t1 {
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1;
   letter-spacing: 0;
   color: #131313;
@@ -750,14 +750,21 @@ header {
   display: -ms-flex;
   display: flex;
 }
-.nav .logo {
-  font-size: 28px;
+.nav .nav-text {
+  font-size: 26px;
   line-height: 1;
   letter-spacing: 0;
+  color: #2E323C;
+}
+.nav .logo {
+  padding: 20px;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #2E323C;
   color: #131313;
   font-weight: 800;
   cursor: pointer;
-  padding: 20px;
   -webkit-transition-property: all;
   -webkit-transition-duration: 80ms;
   -webkit-transition-timing-function: linear;
@@ -804,7 +811,7 @@ header {
   font-family: 'roboto';
 }
 .nav .expander:hover {
-  color: #0084FF;
+  color: #F57209;
 }
 .nav .items {
   -webkit-flex-direction: row;
@@ -816,11 +823,12 @@ header {
   display: flex;
 }
 .nav .item {
-  font-size: 27px;
-  line-height: 1;
-  letter-spacing: 0;
   padding: 20px;
   cursor: pointer;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #2E323C;
   font-weight: 200;
   -webkit-transition-property: all;
   -webkit-transition-duration: 80ms;
@@ -855,7 +863,7 @@ header {
 }
 .nav .logo:hover,
 .nav .item:hover {
-  color: #0084FF;
+  color: #F57209;
   -webkit-transition-property: all;
   -webkit-transition-duration: 80ms;
   -webkit-transition-timing-function: linear;
@@ -961,7 +969,7 @@ footer .social span {
 }
 .products-title {
   margin-top: 36px;
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1;
   letter-spacing: 0;
   color: #131313;
@@ -1050,6 +1058,7 @@ footer .social span {
   font-weight: bold;
   font-weight: 600;
   margin-bottom: 4px;
+  color: #2E323C;
 }
 .post-item .subtitle {
   font-size: 22px;
@@ -1057,6 +1066,7 @@ footer .social span {
   letter-spacing: 0;
   font-weight: 200;
   font-style: italic;
+  color: #2E323C;
 }
 .post-item:hover .img-inner {
   -webkit-transition-property: all;
@@ -1096,7 +1106,7 @@ footer .social span {
   transition-timing-function: linear;
 }
 .post-item:hover .title {
-  color: #0084FF;
+  color: #F57209;
 }
 .products {
   -webkit-flex-direction: row;
@@ -1133,6 +1143,7 @@ footer .social span {
   font-weight: bold;
   font-weight: 600;
   margin-bottom: 4px;
+  color: #2E323C;
 }
 .product .button {
   width: 200px;
@@ -1158,6 +1169,7 @@ footer .social span {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
+  color: #2E323C;
 }
 .product:hover .img-inner {
   -webkit-transition-property: all;
@@ -1197,7 +1209,7 @@ footer .social span {
   transition-timing-function: linear;
 }
 .product:hover .button {
-  background: #0084FF;
+  background: #F57209;
 }
 .post {
   -webkit-flex-direction: column;
@@ -1228,7 +1240,7 @@ footer .social span {
   margin-bottom: 24px;
 }
 .post .title {
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1;
   letter-spacing: 0;
   color: #131313;
@@ -1237,11 +1249,9 @@ footer .social span {
   margin-bottom: 12px;
 }
 .post .subtitle {
-  font-size: 28px;
-  line-height: 1;
+  font-size: 22px;
+  line-height: 1.4;
   letter-spacing: 0;
-  color: #131313;
-  font-weight: 800;
   font-weight: 200;
   font-style: italic;
   text-align: center;
@@ -1271,9 +1281,27 @@ footer .social span {
   font-weight: 500;
   color: black;
 }
+.post .paragraphs {
+  max-width: 1200px;
+  column-gap: 80px;
+  column-count: 2;
+  column-rule: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 40px 20px;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-family: 'roboto';
+  font-weight: 300;
+  color: #2E323C;
+  text-align: left;
+}
+.post .paragraphs b {
+  font-family: 'roboto';
+  font-weight: 500;
+  color: black;
+}
 .post .images {
   width: 100%;
-  max-width: 1200px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1292,7 +1320,7 @@ footer .social span {
   display: flex;
 }
 .post .image {
-  max-width: 600px;
+  max-width: 400px;
   margin: 8px;
   border-radius: 4px;
   -moz-border-radius: 4px;
