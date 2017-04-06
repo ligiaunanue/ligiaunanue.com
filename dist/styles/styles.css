@@ -1403,11 +1403,21 @@ footer .social span {
   transition-timing-function: linear;
 }
 @media only screen and (max-width: 800px) {
-  .nav .expander {
+  .nav .inner .expander {
     display: block;
   }
-  .nav .items {
-    display: none;
+  .nav .inner .items {
+    width: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
   }
 }
 @media only screen and (max-width: 400px) {
