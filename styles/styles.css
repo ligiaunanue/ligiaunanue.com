@@ -821,6 +821,12 @@ body {
   display: -ms-flex;
   display: flex;
 }
+.nav .inner .items.open {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
 .nav .inner .item {
   padding: 20px;
   cursor: pointer;
@@ -1418,6 +1424,7 @@ footer .social span {
     display: -ms-flexbox;
     display: -ms-flex;
     display: flex;
+    display: none;
   }
 }
 @media only screen and (max-width: 400px) {
