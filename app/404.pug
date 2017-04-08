@@ -1,20 +1,14 @@
-doctype html
-html(lange="en")
+extends views/layout-post
 
-	head
-		include views/meta
-		link( rel="stylesheet", media="screen", href="styles/styles.css")
+block page-meta
+  include views/templates
+  +page-meta("404 - Ligia Unanue - Arte Geométrico")
 
-	body.home
-		#App
-			include views/header
-			.content
-				.post(style='margin:80px 0;')
-					.title Página no encontrada
-					.subtitle Puedes pasearte por mis exposiciones
-				include views/posts
+block post-header
+  include views/templates
 
-			include views/footer
+  h1.title Página no encontrada
+  .subtitle Puedes pasearte por mis exposiciones
 
-
-	include views/scripts
+block post-content
+  include views/posts

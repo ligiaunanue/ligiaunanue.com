@@ -1,11 +1,14 @@
 extends ../views/layout-post
 
+block page-meta
+  include ../views/templates
+  +page-meta("Atmósfera seda")
 
 block post-header
   include ../views/templates
   +main-image('atmosfera-seda/portada')
 
-  h1.title Atmòsfera seda
+  h1.title Atmósfera seda
   .subtitle Barcelona, CCAM
 
 block post-content

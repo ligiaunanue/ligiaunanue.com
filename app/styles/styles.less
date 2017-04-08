@@ -35,7 +35,7 @@ body { margin:0 auto; .flxCol; .asc; .default-text-styles; }
 			&:hover{ color:@active;}
 		}
 		.items{ .flxRow;
-			&.open{ }
+			&.open{ .flx; }
 		}
 			.item{ padding:20px; .anchor; .nav-text; .light; .anim(80ms); }
 		.logo:hover, .item:hover{ color:@active; .anim(80ms) }
@@ -134,7 +134,7 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 @media only screen
 and (max-width : 800px) {
 	.nav .inner  .expander{ display:block; }
-	.nav .inner .items{ width:100%; .flxCol; display:flex; .aic; }
+	.nav .inner .items{ width:100%; .flxCol; .aic; display:none; }
 }
 
 

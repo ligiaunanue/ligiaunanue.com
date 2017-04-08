@@ -35,3 +35,9 @@ mixin youtube(id)
 mixin vimeo(id)
 	.video
 		iframe( src=rootVimeo+id frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+
+mixin page-meta(title)
+	- var siteName = ' — Ligia Unanue Arte'
+	title= title+siteName
+	meta( property="og:title"    content=title+siteName )

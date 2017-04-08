@@ -15,7 +15,7 @@
 		$(document).ready(function(){
 
 			$('.expander').click(function(){
-				$('.items').toggle()
+				$('.items').toggleClass('open')
 				var text = $('.expander').text()
 				$('.expander').text( text == '☰' ? '✕' : '☰' )
 			})

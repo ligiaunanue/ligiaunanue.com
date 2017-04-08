@@ -1,11 +1,20 @@
+include ../views/templates
 doctype html
 html(lange="en")
-	include head
 
-	body.home
-		include header
-		block content
-		include footer
+  head
+    block page-meta
+    include meta
+
+    link( rel="stylesheet" media="screen" href="styles/styles.css")
+
+    include script-ga
+    include script-structured-data
+
+  body.home
+    include header
+    block content
+    include footer
 
 
-	include scripts
+  include scripts

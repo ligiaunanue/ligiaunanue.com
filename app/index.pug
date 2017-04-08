@@ -1,6 +1,9 @@
 extends views/layout
 
+block page-meta
+  include views/templates
+  +page-meta("Ligia Unanue - Arte Geométrico")
 
 block content
-	article.content
-		include views/posts
+  article.content
+    include views/posts
