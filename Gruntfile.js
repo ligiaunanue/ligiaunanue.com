@@ -2,6 +2,7 @@
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
+var mozjpeg = require('imagemin-mozjpeg');
 
 module.exports = function (grunt) {
   // load all grunt tasks
@@ -136,8 +137,12 @@ module.exports = function (grunt) {
         }
       }
     },
-    imagemin: {                          // Task
-      dynamic: {                         // Another target
+    imagemin: {
+      dynamic: {
+        options: {
+          progressive: 3,
+          quality: 50,
+        },
         files: [{
           expand: true,
           cwd: '<%= basement.app %>',
