@@ -21,6 +21,7 @@ body { margin:0 auto; .flxCol; .asc; .default-text-styles; }
 
 .t1{ .fs(42px); .black; }
 .t2{ .fs(22px, 1.4); }
+.t3{ .fs(18px, 1.2); color:@black60; }
 .p{ .fs(22px, 36px); .roboto; font-weight:300; color:@textColor;
 	b{ .roboto; font-weight:500; color:black; }
 }
@@ -74,7 +75,7 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 		.img{ height:200px; .flxCol; .jcc; }
       .img-inner{ .asc; }
 		.title{ .t2; .bold; margin-bottom:4px; color:@textColor;}
-		.subtitle{ .t2; .light; .italic; color:@textColor; }
+		.subtitle{ .t3; .light; }
 
 		&:hover{
 			.img-inner{ .anim(100ms); .trans(scale(1.0));  }
@@ -126,7 +127,7 @@ footer{ .container; padding:48px; .flxRow; .flxWrap; .jcc; .asc;
 		}
 
   .video{ margin:8px;
-		iframe{ width:500px; height:320px;
+		iframe{ width:500px; height:320px; background-color:@black;
 		}
 	}
 }

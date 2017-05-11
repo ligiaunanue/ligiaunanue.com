@@ -705,6 +705,12 @@ body {
   line-height: 1.4;
   letter-spacing: 0;
 }
+.t3 {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #717171;
+}
 .p {
   font-size: 22px;
   line-height: 36px;
@@ -1069,12 +1075,11 @@ footer .social span {
   color: #2E323C;
 }
 .posts .item .subtitle {
-  font-size: 22px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.2;
   letter-spacing: 0;
+  color: #717171;
   font-weight: 200;
-  font-style: italic;
-  color: #2E323C;
 }
 .posts .item:hover .img-inner {
   -webkit-transition-property: all;
@@ -1408,6 +1413,7 @@ footer .social span {
 .post .video iframe {
   width: 500px;
   height: 320px;
+  background-color: #131313;
 }
 .img {
   margin-bottom: 8px;
