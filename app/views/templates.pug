@@ -2,12 +2,13 @@
 - var rootVimeo = 'https://player.vimeo.com/video/'
 - var rootYoutube = 'https://www.youtube.com/embed/'
 
-mixin post-item(title, subtitle, secondSubtitle, href, imageUrl)
+mixin post-item(title, subtitle, secondSubtitle, href)
   a.item( href=href+'.html' title=title )
     .img
-      image.img-inner(src=root+'/'+imageUrl+'.jpg')
+      image.img-inner(src=root+'/'+href+'/principal.jpg')
 
     .title= title
+
     .subtitle= subtitle
     .subtitle= secondSubtitle
 
@@ -26,9 +27,9 @@ mixin main-image(imageUrl)
 
 
 mixin image(imageUrl, caption)
-  .image
+  figure.image
     image.image-inner( width='auto' height='auto' src=root+'/'+imageUrl+'.jpg')
-    span.photo-caption= caption
+    figcaption.photo-caption= caption
 
 mixin youtube(id)
   .video
@@ -42,4 +43,4 @@ mixin vimeo(id)
 mixin page-meta(title)
   - var siteName = ' — Ligia Unanue Arte'
   title= title+siteName
-  meta( property="og:title"    content=title+siteName )
+  meta( property="og:title" content=title+siteName )

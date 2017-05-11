@@ -1259,6 +1259,10 @@ footer .social span {
   overflow: hidden;
   margin-bottom: 24px;
 }
+.post .main-image img {
+  width: 100%;
+  height: auto;
+}
 .post > header {
   margin-bottom: 24px;
 }
@@ -1278,6 +1282,11 @@ footer .social span {
   font-weight: 200;
   font-style: italic;
   text-align: center;
+}
+.post .post-content {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
 }
 .post p {
   width: 100%;
@@ -1304,6 +1313,28 @@ footer .social span {
   font-weight: 500;
   color: black;
 }
+.post h3 {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  font-size: 22px;
+  line-height: 36px;
+  font-family: 'roboto';
+  font-weight: 300;
+  color: #2E323C;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0;
+  margin: 48px 0 0;
+  padding: 0;
+  font-weight: 500;
+  text-align: left;
+}
+.post h3 b {
+  font-family: 'roboto';
+  font-weight: 500;
+  color: black;
+}
 .post .paragraphs {
   max-width: 1200px;
   column-gap: 80px;
@@ -1325,6 +1356,7 @@ footer .social span {
 }
 .post .images {
   width: 100%;
+  margin: 20px 0;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1345,15 +1377,33 @@ footer .social span {
 .post .image {
   max-width: 400px;
   margin: 8px;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   overflow: hidden;
 }
 .post .image .image-inner {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.post .image .photo-caption {
+  margin: 8px 0 0 24px;
+  position: relative;
+  font-family: 'roboto';
+  display: block;
+  color: #A1A1A1;
+  font-weight: 300;
+}
+.post .image .photo-caption:before {
+  content: '↳';
+  color: #D0D0D0;
+  position: absolute;
+  left: -20px;
+  top: 1px;
+}
+.post .video {
+  margin: 8px;
 }
 .post .video iframe {
   width: 500px;
