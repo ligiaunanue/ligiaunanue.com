@@ -1,0 +1,36 @@
+extends ../views/layout-post
+
+block page-meta
+  include ../views/templates
+  +page-meta("Biografía")
+
+block post-header
+  include ../views/templates
+  +main-image('principal')
+
+  h1.title Biografía Barcelona 2017
+
+block post-content
+  include ../views/templates
+  pLigia Unanue Quiñones
+p Nació en Chile y vive en Barcelona desde hace más de 35 años.
+p Es hermana de la artista Jacqueline Unanue http://www.jacquelineunanue.com/
+p Estudió en Chile Diseño Industrial en la Universidad de Chile de Valparaíso y Dibujo y Pintura en la Escuela de Bellas Artes de Viña del Mar. También Diseño textil en la Escola de Disseny Tèxtil de Barcelona y en 2015 estudia de forma temporal “Geometría y orden en la naturaleza”, en The Prince’s School of Traditional Arts, de Londres.
+p Su entusiasmo por el mundo de la geometría creció cuando conoció en la Alhambra sus bellos alicatados, observando cómo a través de la simetría se manifiestan bidimensionalmente los grupos cristalográficos. El paso a aplicar estas reglas de simetría a la tridimensionalidad fue natural. Por esa ruta que combinando percepción y creación se encontró con el mundo de la Cristalografía, de forma fortuita por así decirlo, cuando el profesor Miguel Ángel Cuevas visita su exposición “Erase una vez un punto. Geometría en expansión” en Casa Elizalde de Barcelona y le señala que estaba dando origen y creando cristales y cuasi cristales.
+p Ligia comenzó a investigar en el mundo de la geometría desde la doble perspectiva de la creatividad y del diseño específicamente a partir de los “5 Sólidos platónicos”. Con la combinación espacial de éstos, genera poliedros estrellados que se expanden en una gran variedad de formas y riqueza cromática. El resultado es por un lado de una gran belleza, que nace del propio orden de las figuras resultantes, y por otro estéticamente sorprendente por la sutilidad, calidez y luminosidad que emanan algunas de ellas.
+p Incansable trabajadora, busca en la geometría no solo la Belleza y la Armonía como fenómeno visual, sino desvelar su contenido más profundo, investigando en métodos, materiales y técnicas que le permitan ahondar en ese proceso.
+p En sus investigaciones combina libremente, como en una danza,  material, forma, color y técnica… 
+p Su gran reto es lograr el movimiento en sus esculturas: Escultura cinética, siguiendo los patrones geométricos del Islam. 
+
+p Cada día es una nueva posibilidad de descubrir las infinitas manifestaciones que la naturaleza nos ofrece y así poder aplicarlas a su trabajo creativo.
+p Imágenes desde su lugar de trabajo… con esta vista inspiradora!
+
+
+
+
+  .images
+ +image(’01-geo-sant-pau’)
+ +image(’03-geo-sant-pau’)
+ +image(’04-geo-sant-pau’)
+ +image(’08-geo-sant-pau’)
+
