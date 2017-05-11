@@ -1,0 +1,56 @@
+extends ../views/layout-post
+
+block page-meta
+  include ../views/templates
+  +page-meta("Museu de Matemátiques")
+
+block post-header
+  include ../views/templates
+  +main-image('mmaca/mat-4')
+
+  h1.title Geometria, puresa i simplicitat
+  .subtitle Facultat de Matemàtiques Universitat de Barcelona
+  .subtitle Congrés Català d’Educació Matemàtica de Catalunya (C2EM)
+  .subtitle 11 al 13 de Julio  |  2016
+
+block post-content
+  include ../views/templates
+  p Quan l’art i les matemàtiques es toquen
+  p Quan els conceptes matemàtics es treballen amb sensibilitat estètica, els resultats són espectaculars. Ho podreu comprovar a la primera exposició d’aquesta temàtica que hem organitzat des del MMACA.
+  p La podreu visitar els diumenges, del 31 de gener al 28 de febrer, a la planta baixa del Palau Mercader de Cornellà.
+  p Hi trobareu, entre d’altres, obres de Maria Alberich, Simon Beck, Joan Antoni Blanc, Herwig Hauser & Sebastian Gann, Icardi, Jordi Pericot i Ligia Unanue.
+
+  +youtube('https://www.youtube.com/watch?v=tvqF88GBHYE')
+    +youtube('https://www.youtube.com/watch?v=gDCLVjUKCP4')
+      +youtube('https://www.youtube.com/watch?v=iKe3SA60Ljk')
+
+p *Una exposición en medio de un intenso congreso*
+p Fuí invitada  a exponer durante Congrés Català d’Educació Matemàtica de Catalunya (C2EM) a través del profesor Anton Aubanell Pou, al que conocí un día estando en la exposición del Museu de les Matemàtiques (MMACA). ¡Muchas gracias Antón!
+p Así fue cómo, con esta breve exposición, experimenté por primera vez la de ser parte de un congreso de matemáticos, estar en medio de un gran movimiento y entusiasmo de profesores que buscan sistemas creativos para transmitir y comunicar las matemáticas a sus alumnos. Me encontré con artistas, inventores, creadores de sistemas didácticos… verdaderos maestros en la materia, en fín, me pareció una comunidad muy interesante… tanto, que repetí… porque después de esta exposición llegué al Congreso Bienal de la RSME de la Universidad de Zaragoza. Desafortunadamente no pude participar de ponencias y conferencias realmente interesantes… no podía ser… no se puede estar en dos lugares a la vez!
+p Esto se refleja en las siguientes palabras del comité organizador:
+p La educación matemática juega un papel clave en cualquier sociedad moderna. Desde hace muchos años maestros y profesores de nuestro país trabajan para mejorar la calidad de su enseñanza. De este trabajo es testigo del esfuerzo que se hace cada día dentro de las aulas para promover un aprendizaje más significativo y funcional, el potente asociacionismo que existe entre los enseñantes, la abundante cantidad de concursos, talleres, ferias ... dirigidas al alumnado y el elevado número de jornadas y encuentros de maestros y profesores para compartir y difundir experiencias.
+
+p Es una iniciativa abierta a todas las ideas y las maneras de hacer y de ser de maestros y profesores, que quiere proyectarse hacia el futuro en impulsos de innovación e investigación educativa.
+
+p Comité organizador del C2EM                      
+p Barcelona, 20 de maig de 2015
+
+  .images
+    +image(’21-congres’)
++image(’22-congres’)
++image(’01-cubo-con-cubo’)
++image(’03-cubo-pirámides’)
++image(’04-cubo-piramides’)
++image(’05-esfera-satelital’)
++image(’08-hipercubo’)
++image(’09-hipercubo’)
++image(’10-hipercubo’)
++image(’11-hipercubo’)
++image(’12-detalle’)
++image(’13-planeta-principito’)
++image(’14-congres’)
++image(’15-congres’)
++image(’16-congres’)
++image(’17-congres’)
++image(’18-congres’)
++image(’20-congres’)
