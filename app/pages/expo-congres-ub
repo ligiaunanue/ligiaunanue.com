@@ -6,7 +6,7 @@ block page-meta
 
 block post-header
   include ../views/templates
-  +main-image('mmaca/mat-4')
+  +main-image('principal')
 
   h1.title Geometria, puresa i simplicitat
   .subtitle Facultat de Matemàtiques Universitat de Barcelona
