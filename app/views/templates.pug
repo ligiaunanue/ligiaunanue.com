@@ -2,13 +2,14 @@
 - var rootVimeo = 'https://player.vimeo.com/video/'
 - var rootYoutube = 'https://www.youtube.com/embed/'
 
-mixin post-item(title, subtitle, href, imageUrl)
+mixin post-item(title, subtitle, secondSubtitle, href, imageUrl)
 	a.item( href=href+'.html' title=title )
 		.img
 			image.img-inner(src=root+'/'+imageUrl+'.jpg')
 
 		.title= title
 		.subtitle= subtitle
+		.subtitle= secondSubtitle
 
 mixin product(title, imageUrl)
 	.product
