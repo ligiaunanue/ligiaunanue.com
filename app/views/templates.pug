@@ -3,42 +3,43 @@
 - var rootYoutube = 'https://www.youtube.com/embed/'
 
 mixin post-item(title, subtitle, secondSubtitle, href, imageUrl)
-	a.item( href=href+'.html' title=title )
-		.img
-			image.img-inner(src=root+'/'+imageUrl+'.jpg')
+  a.item( href=href+'.html' title=title )
+    .img
+      image.img-inner(src=root+'/'+imageUrl+'.jpg')
 
-		.title= title
-		.subtitle= subtitle
-		.subtitle= secondSubtitle
+    .title= title
+    .subtitle= subtitle
+    .subtitle= secondSubtitle
 
 mixin product(title, imageUrl)
-	.product
-		.img
-			image.img-inner(src=root+'/'+imageUrl+'.jpg')
+  .product
+    .img
+      image.img-inner(src=root+'/'+imageUrl+'.jpg')
 
-		.title= title
-		.button COMPRAR
+    .title= title
+    .button COMPRAR
 
 
 mixin main-image(imageUrl)
-	.main-image
-		image.image-inner(src=root+'/'+imageUrl+'.jpg')
+  .main-image
+    image.image-inner(src=root+'/'+imageUrl+'.jpg')
 
 
-mixin image(imageUrl)
-	.image
-		image.image-inner( width='auto' height='auto' src=root+'/'+imageUrl+'.jpg')
+mixin image(imageUrl, caption)
+  .image
+    image.image-inner( width='auto' height='auto' src=root+'/'+imageUrl+'.jpg')
+    span.photo-caption= caption
 
 mixin youtube(id)
-	.video
-		iframe( src=rootYoutube+id width='560' height='300' frameborder="0" allowfullscreen)
+  .video
+    iframe( src=rootYoutube+id width='560' height='300' frameborder="0" allowfullscreen)
 
 mixin vimeo(id)
-	.video
-		iframe( src=rootVimeo+id frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+  .video
+    iframe( src=rootVimeo+id frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
 
 mixin page-meta(title)
-	- var siteName = ' — Ligia Unanue Arte'
-	title= title+siteName
-	meta( property="og:title"    content=title+siteName )
+  - var siteName = ' — Ligia Unanue Arte'
+  title= title+siteName
+  meta( property="og:title"    content=title+siteName )
