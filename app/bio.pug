@@ -1,17 +1,18 @@
-extends ../views/layout-post
+extends views/layout-post
 
 block page-meta
-  include ../views/templates
+  include views/templates
   +page-meta("Biografía")
 
 block post-header
-  include ../views/templates
+  include views/templates
   +main-image('bio/principal')
 
   h1.title Biografía Barcelona 2017
 
 block post-content
-  include ../views/templates
+  include views/templates
+
   p Ligia Unanue Quiñones
   p Nació en Chile y vive en Barcelona desde hace más de 35 años.
   p Es hermana de la artista Jacqueline Unanue http://www.jacquelineunanue.com/
