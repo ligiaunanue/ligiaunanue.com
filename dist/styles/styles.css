@@ -1297,6 +1297,7 @@ footer .social span {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
+  display: inline;
 }
 .post p b {
   font-family: 'roboto';
