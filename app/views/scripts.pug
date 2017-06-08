@@ -1,23 +1,29 @@
 #Scripts
-	script( src="scripts/lib/jquery.min.js" )
-	//- script( src="scripts/lib/jquery-ui.min.js" )
-	//- script( src="scripts/lib/handlebars.js" )
-	//- script( src="scripts/lib/spine/spine.js" )
-	//-
-	//- script( src="scripts/lib/jwerty.js" )
+  script( src="scripts/lib/jquery.min.js" )
+  script( src="scripts/lib/jquery.tubular.1.0.js" )
+  //- script( src="scripts/lib/jquery-ui.min.js" )
+  //- script( src="scripts/lib/handlebars.js" )
+  //- script( src="scripts/lib/spine/spine.js" )
+  //-
+  //- script( src="scripts/lib/jwerty.js" )
 
-	//-
-	//- script( src="scripts/controller.js" )
-	//- script( src="scripts/a_class.js" )
-	//- script( src="scripts/app.js" )
+  //-
+  //- script( src="scripts/controller.js" )
+  //- script( src="scripts/a_class.js" )
+  //- script( src="scripts/app.js" )
 
-	script.
-		$(document).ready(function(){
+  script.
+    $(document).ready(function(){
 
-			$('.expander').click(function(){
-				$('.items').toggleClass('open')
-				var text = $('.expander').text()
-				$('.expander').text( text == '☰' ? '✕' : '☰' )
-			})
+      /*$('#Wrapper').tubular({
+        videoId: 'ZCAnLxRvNNc',
+        width: '100%',
+      });*/
 
-		})
+      $('.expander').click(function(){
+        $('.items').toggleClass('open')
+        var text = $('.expander').text()
+        $('.expander').text( text == '☰' ? '✕' : '☰' )
+      })
+
+    })

@@ -2,10 +2,37 @@
 - var rootVimeo = 'https://player.vimeo.com/video/'
 - var rootYoutube = 'https://www.youtube.com/embed/'
 
+mixin post-item-main(title, subtitle, secondSubtitle, href, badgeText)
+  a.item.main( href=href+'.html' title=title )
+    .img
+      image.img-inner(src=root+'/'+href+'/portada.jpg')
+
+    .title= title
+      .badge= badgeText
+
+    .subtitle= subtitle
+    .subtitle= secondSubtitle
+
+mixin post-item-main-video(title, subtitle, secondSubtitle, href, badgeText, videoId)
+  a.item.main( href=href+'.html' title=title )
+    .cover
+      +video-background(videoId)
+
+    .title= title
+      .badge= badgeText
+
+    .subtitle= subtitle
+    .subtitle= secondSubtitle
+
+mixin video-background(videoId)
+  .background-video
+    iframe(src=rootYoutube+videoId+'?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ' frameborder="0" allowfullscreen)
+
 mixin post-item(title, subtitle, secondSubtitle, href)
   a.item( href=href+'.html' title=title )
-    .img
-      image.img-inner(src=root+'/'+href+'/principal.jpg')
+    .cover
+      .img
+        image.img-inner(src=root+'/'+href+'/principal.jpg')
 
     .title= title
 
@@ -21,10 +48,13 @@ mixin product(title, imageUrl)
     .button COMPRAR
 
 
-mixin main-image(imageUrl)
-  .main-image
+mixin cover-image(imageUrl)
+  .cover
     image.image-inner(src=root+'/'+imageUrl+'.jpg')
 
+mixin cover-video(videoId)
+  .cover
+    +video-background(videoId)
 
 mixin image(imageUrl, caption)
   figure.image
